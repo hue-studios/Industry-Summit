@@ -14,12 +14,12 @@ dist
 .idea
 
 #API
-api/
+api
 
-archive/
+archive
 
-images/
+images
 
-manage/
+manage
 
 presentation.html
