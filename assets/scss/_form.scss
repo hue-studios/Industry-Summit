@@ -1,0 +1,197 @@
+
+
+
+
+form {
+  label {
+    color: $white;
+    font-size: 14px !important;
+    line-height: 10px !important;
+    margin-top: 20px;
+    letter-spacing: 0.15em;
+    font-family: $condensed-font;
+    @media (min-width: $breakpoint-small) {}
+    @media (min-width: $breakpoint-medium) {
+      margin-top: 30px !important;
+    }
+  }
+
+  .uk-input,
+  .uk-select {
+    padding: 0 5px;
+    vertical-align: bottom;
+    height: 30px;
+    @media (min-width: $breakpoint-small) {}
+    @media (min-width: $breakpoint-medium) {
+      height: 40px;
+    }
+  }
+}
+
+.uk-form-horizontal .uk-form-label {
+  @media (min-width: $breakpoint-medium) {
+    width: 110px;
+    text-align: right;
+  }
+}
+
+.uk-form-horizontal .uk-form-controls {
+  @media (min-width: $breakpoint-small) {}
+  @media (min-width: $breakpoint-medium) {
+    margin-left: 125px;
+  }
+}
+
+.uk-form-controls {
+  position: relative;
+
+  input,
+  select {
+    border: none;
+    border-bottom: thin solid $white;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    background: none;
+    color: $white;
+  }
+
+  select {
+    background: none;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $title-font-bold;
+  }
+
+  input:focus {
+    background: none;
+    border-color: $white;
+    color: $white;
+  }
+
+  span {
+    text-transform: uppercase;
+    color: $cyan;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    line-height: 10px;
+    font-family: $condensed-bold-font;
+  }
+
+  span.uk-icon {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 20px;
+    color: $cyan;
+    width: 20px;
+    @media (min-width: $breakpoint-small) {}
+    @media (min-width: $breakpoint-medium) {
+      height: 40px;
+      top: 10px;
+    }
+  }
+
+  input[aria-invalid="true"],
+  select[aria-invalid="true"] {
+    border-color: $cyan;
+  }
+
+}
+
+.state {
+  .uk-form-controls {
+    width: 80px;
+  }
+}
+
+.zip {
+  .uk-form-controls {
+    width: 100px;
+  }
+}
+
+#registerForm {
+  border: 1px solid $cyan;
+  box-shadow: 0px 2px 25px rgba($black, 0.65);
+  border-radius: 4px;
+  @media (min-width: $breakpoint-small) {}
+  @media (min-width: $breakpoint-medium) {
+    width: 650px;
+  }
+}
+
+.registration-buttons {
+  margin-top: 20px !important;
+  margin-bottom: 60px !important;
+  @media (min-width: $breakpoint-small) {}
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .uk-button-default {
+    font-family: $title-font-bold;
+    background: none;
+    font-size: 18px;
+    transition: all 0.25s $bounce;
+    color: $white;
+    padding-top: 5px;
+    padding-bottom: 3px;
+
+    .uk-icon {
+      font-size: 25px;
+    }
+  }
+
+  .back-btn {
+    margin-right: 15px;
+  }
+
+  .continue-btn {
+    margin-left: 15px;
+  }
+
+  .back-btn:hover {
+    @media (min-width: $breakpoint-small) {}
+    @media (min-width: $breakpoint-medium) {
+      transform: translateX(-20px);
+    }
+  }
+
+  .continue-btn:hover {
+    @media (min-width: $breakpoint-medium) {
+      transform: translateX(20px);
+    }
+  }
+}
+
+.uk-form-controls select:focus {
+  color: $white !important;
+}
+
+.uk-form-controls select:focus::-ms-value {
+    color: $white !important;
+    background: $blue3 !important;
+}
+
+.uk-input:focus {
+  color: $white !important;
+  background: none !important;
+}
+
+.uk-select:focus,
+.uk-textarea:focus {
+  color: $white !important;
+  background: $blue3 !important;
+}
+.uk-form-controls {
+input[readonly] {
+  border-bottom: none;
+  border-color: none !important;
+}
+select[readonly] {
+  border-bottom: none;
+  border-color: none !important;
+}
+}

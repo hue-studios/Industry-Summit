@@ -1,0 +1,28 @@
+#logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  svg#industry {
+    width: 100%;
+    height: auto;
+    display: block;
+    align-self: center;
+    transition: all 0.5s $bounce;
+
+  }
+}
+#intro {
+#logo:hover svg#st8 {
+   transform:translateY(10px) translateX(5px) scale(.8) rotateY(5deg);
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.3));
+  }
+#logo:hover svg#industry {
+    filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.6));
+    transform: scale(1.1);
+  }
+#logo:hover svg#summit {
+   transform:translateY(-10px) translateX(-5px) scale(.8) rotateY(-5deg);
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.4));
+  }
+}

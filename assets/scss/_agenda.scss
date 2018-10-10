@@ -1,0 +1,63 @@
+#agenda {
+  box-shadow: inset 0 5px 35px rgba(0,0,0,0.7);
+
+  .section-title {
+    color: $green;
+    font-size: 66px;
+    line-height: 46px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    @media (min-width: $breakpoint-small) {}
+    @media (min-width: $breakpoint-medium) {
+      font-size: 112px;
+      line-height: 92px;
+    }
+  }
+
+  .session-card {
+    .uk-card {
+      border-radius: 3px;
+      background: radial-gradient(ellipse at center, #17345b 0%,#142a44 83%);
+      color: $white;
+      @media (min-width: $breakpoint-small) {
+        min-height: 300px;
+      }
+      @media (min-width: $breakpoint-medium) {
+        min-height: 360px;
+      }
+
+      h1 {
+        color: $white;
+        line-height: 0.9em;
+        font-size: 32px;
+        @media (min-width: $breakpoint-small) {
+          font-size: 32px;
+        }
+        @media (min-width: $breakpoint-medium) {}
+      }
+
+      p {
+        color: $white;
+        line-height: 1.58em;
+        font-size: 18px;
+      }
+
+      b {
+        font-family: $bold-font;
+      }
+    }
+  }
+
+  .session-card.callout {
+    .uk-card {
+      background: $white;
+      h1 {
+        color: $blue !important;
+      }
+      p {
+        color: $blue !important;
+      }
+    }
+  }
+}

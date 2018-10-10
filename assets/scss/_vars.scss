@@ -1,0 +1,90 @@
+// $blue: #00003f;
+$green: #8dc63f;
+$blue: #243457;
+$blue2: #003F7F;
+$blue3: #23538a;
+$white: #fff;
+$black: #000;
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$navy: #1b2f5c;
+$yellow: #fff500;
+$cyan: #00C7FF;
+$bounce: cubic-bezier(0.205, 0.470, 0.360, 1.385);
+$curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
+$blueGradient: linear-gradient(45deg, #1b2f5c 0%,#23538a 65%, #23538a 100%);
+$blueGradient2: linear-gradient(45deg, #23538a 0%,#1b2f5c 73%);
+$blueGradient3: radial-gradient(ellipse at center, #305072 0%,#243457 100%);
+
+$blueGradient4: radial-gradient(ellipse at center, #17345b 0%,#142a44 83%);
+$body-font: 'Avenir Next W01 Thin', Helvetica, Arial, sans-serif;
+$bold-font: 'AvenirNextLTW01-Medium', Helvetica, Arial, sans-serif;
+$condensed-font: "DIN Next LT W01 Ultra Light", Helvetica, Arial, sans-serif;
+$condensed-bold-font: "DINNextW01-CondensedMed", Helvetica, Arial, sans-serif;
+
+$title-font:'DIN Next LT W01 Ultra Light', Helvetica, Arial, sans-serif;
+$title-font-bold: 'DIN Next LT W01 Regular', Helvetica, Arial, sans-serif;
+
+
+h1,h2,h3,h4,h5 {
+  font-family: $title-font;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+.body-font {
+  font-family: $body-font !important;
+  font-weight: 100;
+}
+.title {
+  font-family: $title-font;
+}
+.title-bold {
+  font-family: $title-font-bold;
+}
+.blueGradient {
+  background: $blueGradient;
+}
+.blueGradient2 {
+  background: $blueGradient4;
+}
+.bold {
+  font-family: $bold-font !important;
+}
+
+.condensed {
+  font-family: $condensed-font !important;
+}
+
+.condensed-bold {
+  font-family: $condensed-bold-font !important;
+}
+
+.blue-fill {
+  fill: $blue;
+}
+
+.green-fill {
+  fill: $green;
+}
+.white {
+  color: $white;
+}
+.blue {
+  color: $blue;
+}
+.cyan {
+  color: $cyan;
+}
+.green {
+  color: $green;
+}
+.light-gray {
+  color: $light-gray;
+}
+.medium-gray {
+  color: $medium-gray;
+}
+.dark-gray {
+  color: $dark-gray;
+}

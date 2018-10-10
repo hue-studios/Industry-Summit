@@ -1,0 +1,208 @@
+#header {
+  // background: $blue;
+  .uk-navbar {
+    background: $white !important;
+    height: 60px;
+    border-bottom: thin solid rgba($black, 0.05);
+    // color: $white;
+    @media (min-width: $breakpoint-small) {
+        height: 80px;
+    }
+  }
+
+  #logo {
+    // max-width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 210px;
+    @media (min-width: $breakpoint-small) {
+      width: 300px;
+    }
+    #industry {
+      .blue-fill {
+        fill: $blue;
+      }
+    }
+
+    #st8 {
+      margin-bottom: 5px;
+
+      .blue-fill {
+        fill: $blue;
+      }
+    }
+
+    #summit {
+      margin-top: 0;
+
+      .blue-fill {
+        fill: $blue;
+      }
+    }
+  }
+
+  #menu-icon {
+    position: absolute;
+    right: 20px;
+    top: 21px;
+    z-index: 10;
+    @media (min-width: $breakpoint-small) {
+      top: 32px;
+    }
+    svg {
+      width: 30px;
+      height: 15px;
+      @media (min-width: $breakpoint-small) {
+        width: 50px;
+        height: 15px;
+      }
+    }
+  }
+  #logoutBtn {
+    font-size: 9px;
+    line-height: 10px;
+    border: thin solid $medium-gray;
+    color: $dark-gray;
+    padding: 5px 10px;
+    margin-left: 10px;
+    letter-spacing: 0.2em;
+    display: none;
+    border-radius: 2px;
+    @media (min-width: $breakpoint-medium) {
+      position: absolute;
+      display: block;
+      right: 10px;
+      top: 30px;
+    }
+  }
+
+
+  .uk-navbar-nav {
+    a {
+      font-family: $title-font-bold;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: $blue;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      transition: all 0.25s cubic-bezier(.4,0,.2,1) !important;
+      vertical-align: baseline;
+      transform-origin: center center;
+      .underline-in {
+        margin-left: 5px;
+        font-family: $bold-font;
+      }
+      @media (min-width: $breakpoint-medium) {
+        padding-left: 25px;
+        padding-right: 25px;
+        letter-spacing: 0.15em;
+      }
+      @media (min-width: $breakpoint-large) {
+        letter-spacing: 0.2em;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    }
+    a:hover {
+      // letter-spacing: 0.3em;
+    }
+
+  }
+
+  .uk-navbar.uk-active {
+    box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+  }
+}
+
+.uk-offcanvas-bar .uk-nav-default > li > a,
+.uk-offcanvas-bar .uk-nav-primary > li > a {
+  color: rgba( $white, 1) !important;
+}
+.uk-offcanvas-bar {
+  background: $blue;
+  color: $white;
+  box-shadow: inset 0px 2px 25px rgba($black, 0.5);
+  .uk-offcanvas-close  {
+    position:relative;
+    padding: 5px 0;
+    top: inherit;
+    right: inherit;
+    z-index: 1;
+  }
+}
+
+.uk-offcanvas-bar .uk-nav-default > li > a:hover,
+.uk-offcanvas-bar .uk-nav-primary > li > a:hover {
+  color: rgba($medium-gray, 1) !important;
+}
+
+.uk-offcanvas-bar .uk-nav-default > li > a.nuxt-link-exact-active,
+.uk-offcanvas-bar .uk-nav-primary > li > a.nuxt-link-exact-active {
+  color: $cyan !important;
+}
+
+.uk-offcanvas-bar {
+  background: rgba($black,0.65) !important;
+  color: $white !important;
+  .uk-nav-primary > li > a {
+    color: $white !important;
+  }
+  text-align: center;
+
+  a {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: $white !important;
+    transition: all 0.25s cubic-bezier(.4,0,.2,1) !important;
+  }
+
+  p {
+    font-size: 12px;
+    text-align: center;
+
+    a {
+      letter-spacing: 0.05em;
+
+      .uk-icon {
+        margin-right: 5px;
+        border-radius: 50%;
+        border: thin solid $white;
+        padding: 6px;
+
+        svg {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+  #logoutBtn {
+    font-size: 9px;
+    line-height: 10px;
+    border: thin solid $medium-gray;
+    color: $dark-gray;
+    padding: 5px 10px;
+    margin-top: 20px;
+    background: none;
+    letter-spacing: 0.2em;
+    border-radius: 2px;
+    @media (min-width: $breakpoint-medium) {
+      display: none;
+    }
+  }
+  #loginBtn {
+    font-size: 9px;
+    line-height: 10px;
+    border: thin solid $medium-gray;
+    color: $dark-gray;
+    padding: 10px 15px;
+    margin-top: 40px;
+    background: none;
+    letter-spacing: 0.2em;
+    border-radius: 2px;
+    @media (min-width: $breakpoint-medium) {
+      display: none;
+    }
+  }
+}

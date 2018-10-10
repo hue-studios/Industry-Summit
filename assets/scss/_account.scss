@@ -1,0 +1,180 @@
+#account {
+  background: radial-gradient(ellipse at center, #17345b 0%,#142a44 83%);
+  position: relative;
+  min-height: 80vh;
+  @media (min-width: $breakpoint-small) {}
+  @media (min-width: $breakpoint-medium) {
+    min-height: 80vh;
+  }
+
+  h1 {
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    line-height: 0.9em;
+    @media (min-width: $breakpoint-small) {
+      letter-spacing: 0.15em;
+      font-size: 18px;
+    }
+    @media (min-width: $breakpoint-medium) {
+      letter-spacing: 0.2em;
+      font-size: 22px;
+    }
+  }
+
+  h3 {
+    letter-spacing: 0.2em;
+    border-bottom: thin solid $cyan;
+  }
+
+  .uk-tab {
+    position:relative;
+    li {
+      a {
+        font-family: $title-font;
+        color: $white;
+        border-bottom: 2px solid transparent;
+        letter-spacing: 0.07em;
+        font-size: 10px;
+        @media (min-width: $breakpoint-small) {
+          letter-spacing: 0.15em;
+        }
+        @media (min-width: $breakpoint-medium) {
+          font-size: 16px;
+          letter-spacing: 0.2em;
+        }
+      }
+    }
+
+    .uk-active {
+      a {
+        color: $cyan;
+        border-color: $cyan;
+      }
+    }
+  }
+
+  .uk-tab:before {
+    border-bottom: 1px solid $blue;
+    bottom: 0;
+    content: "";
+    left: 20px;
+    position: absolute;
+    right: 0;
+  }
+
+  .sponsorship {
+    border-radius: 4px;
+    border: 1px solid $cyan;
+    box-shadow: 0 2px 25px rgba($black, 0.65);
+    max-width: 960px;
+    width: 90%;
+
+    img {
+      border: thin solid $dark-gray;
+      background: $white;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: $title-font;
+
+      a {
+        color: $cyan;
+        text-decoration: underline;
+      }
+    }
+
+    .sponsorship-levels {
+      // max-width: 500px;
+
+      ol,
+      ul {
+        // max-width: 500px;
+      }
+    }
+    // .uk-button {
+    //   color: $cyan;
+    //   border: thin solid $cyan;
+    //   background: $blue3;
+    // }
+  }
+
+  .panel-links {
+    margin-top: 25px;
+
+    p {
+      text-transform: uppercase;
+      font-size: 10px;
+      margin-bottom: 8px;
+      margin-top: 0;
+      letter-spacing: 0.05em;
+    }
+  }
+  // .uk-button.uk-button-default {
+  //   color: $cyan;
+  //   border: thin solid $cyan;
+  //   background: $blue3;
+  // }
+  .registration-card {
+    // background: $blue3;
+    width: 90%;
+    color: $white;
+    border: thin solid $cyan;
+
+    border-radius:3px;
+    padding: 30px 5%;
+    text-align: center;
+    transition: all .25s $bounce;
+    cursor: pointer;
+    box-shadow: 0px 2px 25px rgba($black, 0.65);
+      @media (min-width: $breakpoint-small) {
+        width: 290px;
+        padding: 30px 20px;
+      }
+        @media (min-width: $breakpoint-medium) {
+
+        }
+    h2 {
+      margin-bottom: 0;
+      line-height: 1em;
+    }
+    h5 {
+      letter-spacing: -0.001em;
+      margin-top: 0px;
+
+    }
+    .price {
+      letter-spacing: -0.07em;
+      margin-bottom: 0px;
+      font-size: 48px;
+      border: thin solid $white;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+        background: $blue3;
+        box-shadow: 0px 5px 5px rgba($black, 0.7);
+        svg {
+          width: 50px;
+          height: 50px;
+          margin-top: -10px;
+
+          path {
+            fill: $white;
+
+          }
+          .cls-1{
+            fill:#fff;
+          }
+        }
+    }
+    .category {
+      letter-spacing: 0.15em;
+      color: $cyan;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}

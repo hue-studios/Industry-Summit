@@ -1,0 +1,207 @@
+/* Scss Document */
+$global-link-color: #DA7D02;
+
+// 2. Import default variables and available mixins.
+@import "uikit/variables.scss";
+@import "uikit/mixins.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-card() { color: #000; }
+
+// 4. Import UIkit.
+@import "uikit/uikit.scss";
+
+@import "vars.scss";
+@import "form.scss";
+@import "footer.scss";
+@import "timeline.scss";
+@import "registration/timeline.scss";
+@import "logo.scss";
+@import "header.scss";
+@import "intro.scss";
+@import "agenda.scss";
+@import "registration.scss";
+@import "about.scss";
+@import "login.scss";
+@import "email.scss";
+@import "account.scss";
+
+body, html {
+  font-family: $body-font !important;
+  font-weight: 100;
+}
+a {
+  transition: all .25s cubic-bezier(.4,0,.2,1) !important;
+}
+a:hover {
+  text-decoration: none;
+}
+.box {
+  border: thin solid $blue;
+  width: 30px;
+  height: 30px;
+  left: 36px;
+  top: 1px;
+  position: absolute;
+  @media (min-width: $breakpoint-small) {
+
+
+  }
+  @media (min-width: $breakpoint-medium) {
+    left: 35px;
+    top: 1px;
+    width: 35px;
+    height: 35px;
+  }
+  @media (min-width: $breakpoint-large) {
+    left: 65px;
+  }
+}
+.underline-in {
+  position:relative;
+}
+.underline-in::before {
+  content: '';
+  position: absolute;
+  background: $blue;
+  width: 80%;
+  bottom: 1px;
+  left: 1px;
+  height: 2px;
+  transition: all .2s cubic-bezier(.4,0,.2,1) !important;
+}
+.underline-in.white::before {
+  background: $white;
+}
+.underline-in:hover::before {
+  width: 50%;
+}
+.uk-flex-center {
+  align-items: center;
+}
+.uk-card-hover {
+  transition: .2s cubic-bezier(.4,0,.2,1) !important;
+}
+.uk-offcanvas-bar-animation, .uk-offcanvas-reveal, .uk-offcanvas-push {
+  transition: .22s cubic-bezier(.4,0,.2,1) !important;
+}
+//
+// .uk-offcanvas-overlay::before {
+//   background: rgba(0,0,0,0.5);
+// }
+.uk-offcanvas-container .uk-offcanvas-content {
+  transition: left .22s cubic-bezier(.4,0,.2,1) !important;
+}
+.uk-offcanvas-overlay::before {
+  background: rgba($black, 0.3);
+}
+
+.uk-button {
+  padding-top: 5px;
+  padding-bottom: 3px;
+  transition: all .3s $curve;
+  .uk-icon {
+    line-height: 20px;
+    font-size: 20px;
+  }
+}
+.uk-button:hover {
+  @media (min-width: $breakpoint-medium) {
+    transform: translateX(10px);
+  }
+}
+.page-enter-active {
+  transition: opacity 0.25s $curve;
+}
+
+.page-leave-active {
+  transition: opacity 0.25s $curve;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+.card {
+  transition: all 0.5s;
+}
+.card-enter, .card-leave-to
+/* .card-leave-active for <2.1.8 */ {
+  opacity: 0;
+  transform: scale(0);
+}
+.card-enter-to {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card-leave-active {
+  /*position: absolute;*/
+}
+
+.card-move {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.bounce-enter-active {
+  animation: bounce-in .8s;
+}
+.bounce-leave-active {
+  animation: bounce-out .5s;
+}
+@keyframes bounce-in {
+  0% { transform: scale(0) }
+  50% { transform: scale(1.5) }
+  100% { transform: scale(1) }
+}
+@keyframes bounce-out {
+  0% { transform: scale(1) }
+  50% { transform: scale(1.5) }
+  100% { transform: scale(0) }
+}
+
+.slide-left-enter-active {
+  animation: slide-in-left .25s $curve;
+}
+.slide-left-leave-active {
+  animation: slide-out-left .25s $curve;
+}
+
+@keyframes slide-in-left {
+  0% { transform: translate(100%, 0) }
+  100% { transform: translate(0%, 0)  }
+}
+@keyframes slide-out-left {
+	0% { transform: translate(0%, 0) }
+  100% { transform: translate(-100%, 0)  }
+}
+
+.slide-right-enter-active {
+  animation: slide-in-right .25s $curve;
+}
+.slide-right-leave-active {
+  animation: slide-out-right .25s $curve;
+}
+
+@keyframes slide-in-right {
+  0% { transform: translate(-100%, 0) }
+  100% { transform: translate(0%, 0)  }
+}
+@keyframes slide-out-right {
+	0% { transform: translate(0%, 0) }
+  100% { transform: translate(100%, 0)  }
+}
+
+#loading {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  margin: 0;
+  background: rgba($black, 0.8);
+  svg {
+    // filter: drop-shadow(10px -15px 5px rgba($black,0.9));
+  }
+}
